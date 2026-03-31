@@ -1,6 +1,6 @@
 import random
 
-valores = [random.randint(0, 200) for _ in range(100)]
+valores = [random.randint(0, 200) for _ in range(100)] # list compreension
 
 if 25 in valores:
     print('O numero 25 está no array')
