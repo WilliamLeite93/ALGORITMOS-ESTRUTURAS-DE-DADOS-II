@@ -13,8 +13,6 @@ vetor, movimentos = inserirNoInicio(vetor, "Henrique")
 print(f'Após Adição - {vetor}')
 print(f'Custo de Memória: {movimentos} movimentos')
 
-
-
 def removerDaPosicao(vetor, indice):
     movimentos = 0
     for i in range(indice, 9):

@@ -1,6 +1,6 @@
 vetor = [50, 100, 150, 200, 210, 220, 230, 240, 250]
 
-def encontrar_Valor(vetor):
+def encontrarValor(vetor):
     largura = 3
     for linha in range(0, 3):
         for coluna in range(0, 3):
@@ -8,9 +8,9 @@ def encontrar_Valor(vetor):
             valor = vetor[indice]
             print(f"L:{linha} C:{coluna} -> índice:{indice} valor:{valor}")
 
-encontrar_Valor(vetor)
+encontrarValor(vetor)
 
-def filtro_contraste(vetor):
+def filtroContraste(vetor):
     for i in range(len(vetor)):
         valor = vetor[i]
         novo_valor = round(valor * 1.2)
@@ -20,7 +20,7 @@ def filtro_contraste(vetor):
 
         vetor[i] = novo_valor
 
-filtro_contraste(vetor)
+filtroContraste(vetor)
 print()
 print(vetor)
 
