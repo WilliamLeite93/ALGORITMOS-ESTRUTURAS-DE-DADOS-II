@@ -29,13 +29,6 @@ def pos_ordem(raiz):
     pos_ordem(raiz.dir)
     print(raiz.valor, end=" ")
 
-def in_ordem(raiz):
-    if raiz is None:
-        return
-    in_ordem(raiz.esq)
-    print(raiz.valor, end=" ")
-    in_ordem(raiz.dir)   
-
 tree = None
 
 for valor in valores:
@@ -46,6 +39,3 @@ pre_ordem(tree)
 print()
 print("Pós Ordem:")
 pos_ordem(tree)
-print()
-print("Em ordem:")
-in_ordem(tree)
