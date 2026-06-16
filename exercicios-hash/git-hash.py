@@ -1,19 +1,26 @@
 import hashlib
 
-def hash_arquivo(conteudo):
-    return hashlib.sha256(conteudo.encode()).hexdigest()
+def simular_commit(nome_arquivo, conteudo):
+    hash_resultado = hashlib.sha256(conteudo.encode()).hexdigest()
+    
+    print(f" Arquivo : {nome_arquivo}")
+    print(f" Conteúdo: '{conteudo}'")
+    print(f" Git Hash: {hash_resultado}")
+    return hash_resultado
 
-def exibir_resultado(versao, conteudo):
-    h = hash_arquivo(conteudo)
-    print(f"\n  [ {versao} ]")
-    print(f"  Conteúdo : {conteudo}")
-    print(f"  Hash     : {h}")
-    return h
+print("\n" + "=" * 60)
+print("  SIMULAÇÃO DE COMMIT GIT")
 
-print("Git com Hash")
+config_original = "acesso=user;porta=8080;debug=false;"
+print("\n COMMIT 1: Configuração Padrão ")
+hash1 = simular_commit("config.env", config_original)
 
-v1 = "versao-1"
-v2 = "versao-2"
+config_alterada = "acesso=admin;porta=8080;debug=false;"
+print("\n COMMIT 2: Alteração de Acesso")
+hash2 = simular_commit("config.env", config_alterada)
 
-h1 = exibir_resultado("Versão 1", v1)
-h2 = exibir_resultado("Versão 2", v2)
+print("\n" + "-" * 60)
+print("  DIFERENÇAS ENTRE HASHES:")
+print(f"  Hash 1: {hash1}")
+print(f"  Hash 2: {hash2}")
+print("-" * 60)

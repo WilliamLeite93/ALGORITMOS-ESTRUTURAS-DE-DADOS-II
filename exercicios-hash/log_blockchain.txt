@@ -1,0 +1,4 @@
+medico: dr. Silva | paciente: Ana | data: 2023-10-10 | motivo: check-up mensal | hash_anterior: 0000 | hash: 573326fc9cca96f15d46acf115c570c3d6ee43d27f319dfab5b80d3cd0878a76
+medico: dr. Oliveira | paciente: Carlos | data: 2023-10-11 | motivo: consulta de rotina | hash_anterior: 573326fc9cca96f15d46acf115c570c3d6ee43d27f319dfab5b80d3cd0878a76 | hash: 09500e910e7889cecebce661c71cad75099f0a9183c19e91bbee255e96021484
+medico: dr. Silva | paciente: Ana | data: 2023-10-10 | motivo: check-up mensal | hash_anterior: 0000 | hash: 573326fc9cca96f15d46acf115c570c3d6ee43d27f319dfab5b80d3cd0878a76
+medico: dr. Oliveira | paciente: Carlos | data: 2023-10-11 | motivo: consulta de rotina | hash_anterior: 573326fc9cca96f15d46acf115c570c3d6ee43d27f319dfab5b80d3cd0878a76 | hash: 09500e910e7889cecebce661c71cad75099f0a9183c19e91bbee255e96021484
